@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  </head>
-  <body>
-  <p>Redirecting to your local n8n instance...</p>
-  <script>
-    window.location.href = "https://localhost:5678/rest/oauth2-credential/callback" + window.location.search;
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TikTok OAuth Callback</title>
+</head>
+<body>
+<h1>TikTok OAuth Callback</h1>
+<p>Copy the code value below:</p>
+<pre id="out" style="white-space:pre-wrap;word-break:break-all;background:#eee;padding:10px;"></pre>
+<script>
+  document.getElementById("out").textContent = window.location.search;
 </script>
-  </body>
-  </html>
-  
+</body>
+</html>
